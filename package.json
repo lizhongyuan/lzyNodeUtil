@@ -1,0 +1,10 @@
+{
+  "name": "lzy-node-util",
+  "version": "0.0.1",
+  "description": "lizhongyuan node util",
+  "author": "fenixlee@163.com",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.5.1"
+  }
+}
