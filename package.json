@@ -5,6 +5,8 @@
   "author": "fenixlee@163.com",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "^3.5.1"
+    "bluebird": "^3.5.1",
+    "lodash": "^4.17.4",
+    "pm2": "^2.9.1"
   }
 }
