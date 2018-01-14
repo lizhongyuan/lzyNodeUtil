@@ -11,8 +11,8 @@ debugger;
 
 setTimeout(() => {
     let processDescList = pm2IPC.getProcessDescList()
-    // console.log("???", JSON.stringify(processDescList))
-    console.log("???", processDescList[0].pm2_env.pm_id);
+    console.log("????", processDescList.length);
+    console.log(process.env.NODE_APP_INSTANCE)
 }, 1000);
 
 // console.log("processDescList.length:", processDescList.length);

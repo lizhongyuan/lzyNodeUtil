@@ -2,6 +2,6 @@
   "name": "application-name",
   "version": "0.0.1",
   "scripts": {
-    "pm2": "pm2 start pm2IPC.js --name ipctest -i 1"
+    "pm2": "pm2 start pm2IPC.js --name ipctest -i 2"
   }
 }
