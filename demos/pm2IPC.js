@@ -3,16 +3,27 @@
  */
 
 const pm2IPC = require('../lib/common/pm2IPC');
+const Promise = require('bluebird');
+
+
+let messageHandler = function() {
+  return Promise.resolve('abcd');
+}
 
 // 初始化
-pm2IPC.init('ipctest', () => {});
-
-debugger;
+pm2IPC.init('ipctest', messageHandler);
 
 setTimeout(() => {
-    let processDescList = pm2IPC.getProcessDescList()
-    console.log("????", processDescList.length);
-    console.log(process.env.NODE_APP_INSTANCE)
+  let processDescList = pm2IPC.getProcessDescList()
+  let curPm2Id = parseInt(process.env.NODE_APP_INSTANCE);
+  if (0 === curPm2Id) {
+    console.log("Hhh cur pm2 id", process.env.NODE_APP_INSTANCE);
+    pm2IPC.sendMessage(1, '1234')
+      .then(res => {
+        console.log(res);
+      }, err => {
+        console.log(err);
+      });
+  }
 }, 1000);
 
-// console.log("processDescList.length:", processDescList.length);
