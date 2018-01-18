@@ -5,6 +5,9 @@
 const pm2IPC = require('../lib/common/pm2IPC');
 const Promise = require('bluebird');
 
+const log4js = require('../lib/common/log4js');
+const logger = log4js.getLogger('lzy-util');
+
 
 let messageHandler = function() {
   return Promise.resolve('abcd');
@@ -14,6 +17,7 @@ let messageHandler = function() {
 pm2IPC.init('ipctest', messageHandler);
 
 setTimeout(() => {
+  logger.info("setTimeout 1000ms."); 
   let processDescList = pm2IPC.getProcessDescList()
   let curPm2Id = parseInt(process.env.NODE_APP_INSTANCE);
   if (0 === curPm2Id) {
