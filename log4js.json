@@ -1,0 +1,15 @@
+{
+  "appenders":[
+    {
+      "type":"console"
+    },
+    {
+      "type":"dateFile",
+      "filename":"app.log",
+      "pattern":"-yyyy-MM-dd",
+      "category":"lzy-util",
+      "alwaysIncludePattern":true
+    }
+  ],
+  "replaceConsole":true
+}
