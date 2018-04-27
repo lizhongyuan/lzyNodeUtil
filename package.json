@@ -1,13 +1,15 @@
 {
-  "name": "lzy-node-util",
-  "version": "0.0.1",
+  "name": "lzyNodeUtil",
   "description": "lizhongyuan node util",
-  "author": "fenixlee@163.com",
-  "license": "MIT",
+  "version": "0.0.1",
+  "scripts":{
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/lizhongyuan/lzyNodeUtil.git"
   },
+  "license": "MIT",
+  "author": "fenixlee@163.com",
   "readmeFilename": "README.md",
   "main": "./index.js",
   "dependencies": {
