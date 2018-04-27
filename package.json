@@ -8,6 +8,7 @@
     "type": "https",
     "url": "https://github.com/lizhongyuan/lzyNodeUtil"
   },
+  "main": "./index.js",
   "dependencies": {
     "bluebird": "^3.5.1",
     "config": "^1.29.2",
