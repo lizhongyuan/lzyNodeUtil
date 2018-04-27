@@ -5,8 +5,8 @@
   "author": "fenixlee@163.com",
   "license": "MIT",
   "repository": {
-    "type": "https",
-    "url": "https://github.com/lizhongyuan/lzyNodeUtil"
+    "type": "git",
+    "url": "git://github.com/lizhongyuan/lzyNodeUtil.git"
   },
   "main": "./index.js",
   "dependencies": {
