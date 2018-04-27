@@ -5,7 +5,7 @@
   "author": "fenixlee@163.com",
   "license": "MIT",
   "repository": {
-    "type": "git",
+    "type": "https",
     "url": "https://github.com/lizhongyuan/lzyNodeUtil"
   },
   "dependencies": {
